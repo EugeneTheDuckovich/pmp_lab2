@@ -143,13 +143,18 @@ fun PlanetCard(planet: Planet, modifier: Modifier = Modifier) {
                     style = MaterialTheme.typography.headlineSmall,
                     color = Color.White,
                     modifier = Modifier
-                        .padding(top = 6.dp)
+                )
+                Spacer(
+                    modifier = Modifier
+                        .height(12.dp)
+                        .fillMaxWidth()
+                        //.background(Color(82,158,234,255))
                 )
                 Text(
                     text = planet.galaxy,
                     color = Color(158,159,236,255),
                     modifier = Modifier
-                        .padding(top = 6.dp, bottom = 6.dp),
+                        .padding( bottom = 6.dp),
                 )
 
                 Spacer(
